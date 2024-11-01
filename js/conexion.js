@@ -1,5 +1,17 @@
 const btnCart = document.querySelector('.container-cart-icon');
 const containerCartProducts = document.querySelector('.container-cart-products');
+const btnPurchase = document.getElementById('btnPurchase');
+
+btnPurchase.addEventListener('click', () => {
+    if (allProducts.length > 0) {
+        alert("Compra exitosa");
+        allProducts = []; 
+        showHTML();
+    } else {
+        alert("El carrito está vacío. Agrega productos antes de comprar.");
+    }
+});
+
 
 btnCart.addEventListener('click', () => {
 	containerCartProducts.classList.toggle('hidden-cart');

@@ -193,6 +193,7 @@ header{
     user-select: none;
 }
 
+
 #btn:hover,
   :focus {
     color: #ffffff;
@@ -203,3 +204,12 @@ header{
       0 0 100px #666;
   }
 
+  #btnPurchase:hover,
+  :focus {
+    color: #ffffff;
+    background: #666;
+    border: 1px solid #666;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+    box-shadow: 0 0 5px #666, 0 0 20px #666, 0 0 50px #666,
+      0 0 100px #666;
+  }
