@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Titillium+Web:wght@200;300;400;600;700&display=swap');
 *{
     margin: 0;
     padding:0;
-    font-family: 'Open Sans';
+    font-family: 'Lato';
 }
 
 body{
@@ -15,18 +14,122 @@ header{
     justify-content: space-around;
     background-size: cover;
     background-position:center;
-    background-color: #666;
+    background-color: white;
     height: 150px;
 }
 
 .icon-cart{
     width: 40px;
+    height: 40px;
+    stroke: #000;
 }
-header h1{
-    text-align: center;
-    font-size: 35px;
-    color: black;
+
+.icon-cart:hover{
+    cursor: pointer;
 }
+
+.container-icon{
+    position: relative;
+}
+
+.count-products{
+    position: absolute;
+    top: 55%;
+    right: 0;
+
+    background-color: #000;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+#count{
+    font-size: 12px;
+}
+
+.container-cart-products{
+    position: absolute;
+    top: 50px;
+    right: 0;
+
+    background-color: #fff;
+    width: 400px;
+    z-index: 1;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+    border-radius: 10px;
+    
+}
+
+.cart-product{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+
+}
+
+.info-cart-product{
+    display: flex;
+    justify-content: space-between;
+    flex: 0.8;
+}
+
+.title-product-cart{
+    font-size: 20px;
+}
+
+.price-product-cart{
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.quantity-product-cart{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.icon-close{
+    width: 25px;
+    height: 25px;
+}
+
+.icon-close:hover{
+    stroke: red;
+    cursor: pointer;
+}
+
+.cart-total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px;
+}
+
+.cart-total h3{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.total-pay{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.hidden-cart{
+    display: none;
+}
+
+/*estilos main*/
+
 .container{
     max-width: 1200px;
     padding: 10px;
