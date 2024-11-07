@@ -149,6 +149,7 @@ header{
 }
 .container .container-products .product{
     max-width: 200px;
+    height: auto;
     margin: auto;
     border: 1px solid #333;
     border-radius: 10px;
